@@ -112,7 +112,6 @@ article{
     display: grid;
     border-radius: 0.5em;
     background-color: var(--White);
-    margin-top: 2rem;
     overflow: hidden;
     max-width: 600px;
     

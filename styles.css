@@ -89,6 +89,7 @@ body{
     font-weight: var(--FW-REGULAR);
     color: var(--Dark-grayish-blue);
     background-color: var(--Cream);
+    margin: 1em;
     font-size: var(--FS);
     display: grid;
     place-content: center;
@@ -104,14 +105,15 @@ body{
 
 /*|| PRODUCT STYLE*/
 
-article{
+.main__section{
     box-shadow: 0 1.6rem 1.6rem hsl(0, 0%, 0%, 0.05);
 }
 
-.main__article{
+.main__section{
     display: grid;
     border-radius: 0.5em;
     background-color: var(--White);
+    margin-top: 2rem;
     overflow: hidden;
     max-width: 600px;
     
@@ -119,7 +121,7 @@ article{
 }
 
 @media(min-width: 600px){
-    .main__article{
+    .main__section{
         grid-template-columns: repeat(2,1fr);
     }
     
@@ -142,12 +144,18 @@ picture{
     gap: .5rem;
 }
 
-.main__h1{
+.main__h2{
     font-size: 2rem;
     font-family: var(--FF-1);
     font-weight: var(--FW-BOLD);
     color: black;
     line-height: 2rem;
+}
+
+.main__h2-description{
+  font-family: var(--FF-2);
+  font-size: var(--FS);
+  font-weight: var(--FW-REGULAR);
 }
 
 .product__discount-price{
@@ -188,10 +196,3 @@ picture{
     background-image: url(./images/icon-cart.svg);
 
 }
-
-
-
-
-
-
-

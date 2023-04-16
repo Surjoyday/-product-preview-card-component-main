@@ -136,6 +136,8 @@ picture{
 .img__caption{
     letter-spacing: 0.5rem;
     text-transform: uppercase;
+    font-weight: var(--FW-REGULAR);
+    font-size: small;
 }
 
 .product__content{

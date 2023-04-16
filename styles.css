@@ -89,7 +89,6 @@ body{
     font-weight: var(--FW-REGULAR);
     color: var(--Dark-grayish-blue);
     background-color: var(--Cream);
-    margin: 1em;
     font-size: var(--FS);
     display: grid;
     place-content: center;

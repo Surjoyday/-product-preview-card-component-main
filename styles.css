@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+
+:root{
+
+    /* PRIMARY*/
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+     /* NEUTRAL*/
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    
+    /* FONT SIZE*/
+    --FS: 14px;
+
+     /* FONT FAMILY*/
+     --FF-1:'Fraunces', serif;    
+     --FF-2: 'Montserrat', sans-serif;
+
+     /* FONT WEIGHT*/
+    --FW-REGULAR:500;
+    --FW-BOLD:700;
+}
+
+
+/*|| RESET */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+
+/*|| GENERAL STYLING*/
+
+body{
+    font-family: var(--FF-2);
+    font-weight: var(--FW-REGULAR);
+    color: var(--Dark-grayish-blue);
+    background-color: var(--Cream);
+    margin: 1em;
+    font-size: var(--FS);
+    display: grid;
+    place-content: center;
+}
+
+/*|| UTILITIES */
+
+.product__price{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/*|| PRODUCT STYLE*/
+
+article{
+    box-shadow: 0 1.6rem 1.6rem hsl(0, 0%, 0%, 0.05);
+}
+
+.main__article{
+    display: grid;
+    border-radius: 0.5em;
+    background-color: var(--White);
+    margin-top: 2rem;
+    overflow: hidden;
+    max-width: 600px;
+    
+
+}
+
+@media(min-width: 600px){
+    .main__article{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+    
+
+picture{
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.img__caption{
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+.product__content{
+    padding: 2rem;
+    display: grid;
+    gap: .5rem;
+}
+
+.main__h1{
+    font-size: 2rem;
+    font-family: var(--FF-1);
+    font-weight: var(--FW-BOLD);
+    color: black;
+    line-height: 2rem;
+}
+
+.product__discount-price{
+    font-size: 2rem;
+    color: var(--Dark-cyan);
+    font-weight: var(--FW-BOLD);
+    font-family: var(--FF-1);
+}
+
+.product__original-price{
+    text-decoration:line-through;
+}
+
+/* || BUTTON */
+
+.button{
+    cursor: pointer;
+    border: none;
+    padding: .65rem;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    font-weight: var(--FW-BOLD);
+    border-radius: .5rem;
+    display: inline-flex;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:is(:hover, :focus-within){
+    background-color: hsl(159, 37%, 18%);
+}
+
+.button[data-icon="shopping-cart"]::before{
+    content: "";
+    height: 16px;
+    width: 15px;
+    background-image: url(./images/icon-cart.svg);
+
+}
+
+
+
+
+
+
+

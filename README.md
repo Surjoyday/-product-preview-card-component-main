@@ -14,6 +14,6 @@
 * Flexbox
 * CSS Grid
 * Pseudo elements
-* Isolate property
+* CSS Isolation
   
 

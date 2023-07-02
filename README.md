@@ -10,5 +10,10 @@
 
 ### Built with
 
-* 
+* Semantic HTML5 markup
+* Flexbox
+* CSS Grid
+* Pseudo elements
+* Isolate property
+  
 
